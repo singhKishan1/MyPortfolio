@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.sidebar {
+  height: 100vh;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #040b14;
+  padding-top: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar img {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+
+.sidebar .profilePic-name {
+  text-align: center;
+  margin-top: 10px;
+  color: beige;
+  font-size: 22px;
+}
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #575757;
+  display: block;
+  transition: all 0.3s;
+  margin: 10px 0;
+}
+.sidebar a:hover {
+  color: white;
+}
+.social-media {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.social-media a {
+  margin: 0 10px;
+  color: #575757;
+  font-size: 24px;
+}
+
+.profile-picture-border {
+  border: 8px solid #424242;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture {
+  text-align: center;
+  border-radius: 50%;
+}
+
+.home-section {
+  background-image: url("/img/sunrise-urban-house.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 32px;
+}
+
+.main-content .content-section {
+  margin-left: 300px;
+  padding: 200px;
+  padding-top: 100px;
+  height: 100vh;
+}
+
+.main-content .content-section .typedText {
+  font-size: 30px;
+  color: white;
+  margin-top: 20px;
+  width: 400px;
+  display: flex;
+  gap: 10px;
+}
+
+#animatedText {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+  color: #48ff00;
+}
+
+#animatedText::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Positioning the underline */
+  height: 3px;
+  width: 0;
+  background-color: #ff6347; /* Custom underline color */
+  transition: width 0.3s ease;
+  border-radius: 4px;
+}
+
+#animatedText.show-underline::after {
+  width: 100%; /* Fully visible underline */
+}
+
+.about-section {
+  background-color: #ffffff;
+  /* background-image: url("/img/city-lights-mountains-sunset.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.about-heading {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.aboutSkillsContainer {
+  margin-top: 200px;
+  background-color: #efffff;
+  border-radius: 4px;
+  padding: 40px;
+  width: 900px;
+  transition: all 0.3s;
+}
+
+.skillContainer {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.skillContainer .skillBox {
+  /* width: 50%; */
+}
+
+.skillLeftBox {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.skillLeftBox .skillImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+.skillRightBox {
+  font-size: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  gap: 30px;
+}
+
+.aboutSkillsContainer:hover {
+  box-shadow: 0px 0px 10px 5px #a6ddd8;
+}
+
+
+.skillImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+.skillImg img:hover{
+  scale: 1.1;
+  box-shadow: 0px 0px 5px 5px rgb(228, 228, 228);
+}
